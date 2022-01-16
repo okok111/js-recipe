@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <h1>松下の出身地はどこでしょう。</h1>
+    <button id="button0">大阪府</button>
+    <button id="button1">香川県</button>
+    <button id="button2">北海道</button>
+    <div id="element"></div>
+    
+    <script>
+
+      const button0 = document.getElementById("button0");
+      const button1 = document.getElementById("button1");
+      const button2 = document.getElementById("button2");
+      const element = document.getElementById("element");
+
+      button0.onclick = function () {
+        element.textContent = "残念!大阪は大川の出身地でした。";
+      };
+
+      button1.onclick = function () {
+        element.textContent = "正解！！！";
+      };
+
+      button2.onclick = function () {
+        element.textContent = "残念!北海道は大泉洋の出身地でした。";
+      };
+    </script>
+  </body>
+</html>
